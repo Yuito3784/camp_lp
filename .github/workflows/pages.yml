@@ -19,7 +19,7 @@ jobs:
         with:
           node-version: 20
           cache: 'npm'
-      - run: npm ci --legacy-peer-deps
+      - run: npm install --legacy-peer-deps
       - run: npm run build
       - run: GITHUB_PAGES=true npx next export
       - run: cp out/index.html out/404.html
