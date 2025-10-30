@@ -39,12 +39,12 @@ export default function CampingLanding() {
   const heroRef = useRef<HTMLDivElement>(null)
 
   const galleryImages = [
-    { url: "/camping-tent-at-sunset-with-mountains.jpg", alt: "テントと夕日" },
-    { url: "/campfire-with-people-sitting-around-at-night.jpg", alt: "焚き火" },
-    { url: "/mountain-lake-camping-site-with-forest.jpg", alt: "湖畔のキャンプ" },
-    { url: "/camping-cooking-outdoor-breakfast.jpg", alt: "アウトドア料理" },
-    { url: "/starry-night-sky-over-camping-tents.jpg", alt: "星空キャンプ" },
-    { url: "/hiking-trail-in-forest-with-backpack.jpg", alt: "ハイキング" },
+    { url: "camping-tent-at-sunset-with-mountains.jpg", alt: "テントと夕日" },
+    { url: "campfire-with-people-sitting-around-at-night.jpg", alt: "焚き火" },
+    { url: "mountain-lake-camping-site-with-forest.jpg", alt: "湖畔のキャンプ" },
+    { url: "camping-cooking-outdoor-breakfast.jpg", alt: "アウトドア料理" },
+    { url: "starry-night-sky-over-camping-tents.jpg", alt: "星空キャンプ" },
+    { url: "hiking-trail-in-forest-with-backpack.jpg", alt: "ハイキング" },
   ]
 
   const testimonials = [
@@ -230,7 +230,7 @@ export default function CampingLanding() {
                 onClick={() => openGallery(index)}
                 className="group relative aspect-[4/3] rounded-2xl overflow-hidden cursor-pointer hover:scale-105 transition-transform duration-300"
               >
-                <img src={image.url || "/placeholder.svg"} alt={image.alt} className="w-full h-full object-cover" />
+                <img src={image.url || "placeholder.svg"} alt={image.alt} className="w-full h-full object-cover" />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-6">
                   <p className="text-white font-semibold text-lg">{image.alt}</p>
                 </div>
@@ -274,7 +274,7 @@ export default function CampingLanding() {
 
                 <div className="p-8 rounded-2xl bg-gradient-to-br from-emerald-900/50 to-green-900/50 border border-emerald-700/50">
                   <img
-                    src="/day-camping-with-bbq-and-picnic.jpg"
+                    src="day-camping-with-bbq-and-picnic.jpg"
                     alt="デイキャンプ"
                     className="w-full h-48 object-cover rounded-xl mb-4"
                   />
@@ -313,7 +313,7 @@ export default function CampingLanding() {
 
                 <div className="p-8 rounded-2xl bg-gradient-to-br from-emerald-900/50 to-green-900/50 border border-emerald-700/50">
                   <img
-                    src="/overnight-camping-with-tent-under-stars.jpg"
+                    src="overnight-camping-with-tent-under-stars.jpg"
                     alt="1泊2日キャンプ"
                     className="w-full h-48 object-cover rounded-xl mb-4"
                   />
@@ -349,7 +349,7 @@ export default function CampingLanding() {
 
                 <div className="p-8 rounded-2xl bg-gradient-to-br from-emerald-900/50 to-green-900/50 border border-emerald-700/50">
                   <img
-                    src="/weekend-camping-with-hiking-and-activities.jpg"
+                    src="weekend-camping-with-hiking-and-activities.jpg"
                     alt="2泊3日キャンプ"
                     className="w-full h-48 object-cover rounded-xl mb-4"
                   />
@@ -549,7 +549,7 @@ export default function CampingLanding() {
                 所在地
               </h3>
               <div className="aspect-video rounded-xl overflow-hidden mb-6">
-                <img src="/map-location-camping-site-in-mountains.jpg" alt="地図" className="w-full h-full object-cover" />
+                <img src="map-location-camping-site-in-mountains.jpg" alt="地図" className="w-full h-full object-cover" />
               </div>
               <p className="text-emerald-200 mb-2">〒123-4567</p>
               <p className="text-emerald-200 mb-4">長野県○○市△△町1-2-3</p>
@@ -766,7 +766,7 @@ export default function CampingLanding() {
 
           <div className="relative">
             <img
-              src={galleryImages[selectedImage].url || "/placeholder.svg"}
+              src={galleryImages[selectedImage].url || "placeholder.svg"}
               alt={galleryImages[selectedImage].alt}
               className="w-full h-[80vh] object-contain"
             />
